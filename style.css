@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, black, rgb(27, 26, 26));
+    font-size: 62.5%;
+    font-family: 'Heebo', sans-serif;
+
+    /* a cada 1 rem, se considera 10px */
+}
+
+header {
+    background: linear-gradient(to right, black, rgb(27, 26, 26));
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+main {
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+}
+
+section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: auto;
+    width: 90%;
+}
+
+.container .titulo {
+    font-size: 2rem;
+}
+
+.container .titulo p {
+    font-size: 1.6rem;
+    color: #6433E8;
+}
+
+section .container img {
+    margin-top: 3%;
+    align-self: center;
+}
+
+section.infos {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 2%;
+}
+
+section.infos .sobre,
+section.infos .trabalhos {
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+
+    width: 95%;
+}
+
+section.infos .sobre .fotos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.infos .sobre .fotos div {
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 50% 50%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+
+    padding: 25px;
+    margin: 3px;
+
+    width: 70px;
+    height: 70px;
+}
+
+.foto-pedro {
+    background-image: url('img/fotoPedro-100px.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-henrique {
+    background-image: url('img/fotoHenrique-100.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer {
+    background: linear-gradient(to bottom, #4b18d8, #5c28ec);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+footer .container h2 {
+    color: #FFAD27;
+}
+
+footer .container .criadores {
+    font-size: 1.6rem;
+    flex-direction: column;
+    color: white;
+}
+
+footer .container .contato {
+    font-size: 1.6rem;
+    flex-direction: column;
+    color: white;
+}
+
+footer .container .contato ul .email {
+    list-style-image: url('img/email-16.png');
+}
+
+footer .container .contato ul .whats {
+    list-style-image: url('img/whatsapp-16.png');
+}
